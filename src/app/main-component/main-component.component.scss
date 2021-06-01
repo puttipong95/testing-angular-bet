@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  background-color: rgba(220, 220, 220, 0.486);
+}
+
+.row {
+  padding: 0 15px 0 15px;
+}
+
+.box {
+  border: 1px solid gray;
+  min-height: 300px;
+  text-align: center;
+  align-items: center;
+}
+
+.head {
+  border-bottom: 1px solid gray;
+}
+
+.content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 15px 0;
+}
+
+.content button {
+  margin-top: 50px;
+}
+
+.barner {
+  padding-top: 15px;
+}
+
+.barner img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,45 @@
+<div class="container text-center">
+  <div class="header">
+    <h4>Test API By Putthipong</h4>
+  </div>
+  <form [formGroup]="form">
+    <div class="form">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Telephone</span
+          >
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          formControlName="tel"
+          pattern="[0-9]*"
+          maxlength="12"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">
+            Password
+          </span>
+        </div>
+        <input
+          type="password"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          formControlName="password"
+        />
+      </div>
+      <button type="button" class="btn btn-success" (click)="onSubmit()">
+        สมัครสมาชิก
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="clearForm()">
+        ล้างค่า
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,50 @@
+<div class="container-fluid text-center">
+  <div class="header">
+    <h4>Test API By Putthipong</h4>
+    <button type="button" class="btn btn-secondary" (click)="signOut()">
+      ออกจากระบบ
+    </button>
+  </div>
+  <div class="row">
+    <div class="col col-3 box">
+      <div class="head">ฝากเงิน</div>
+      <div class="content">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="กรุณาใส่จำนวนเงิน"
+          [(ngModel)]="moneyDep"
+        />
+        <button type="button" class="btn btn-primary" (click)="depositFunc()">
+          ฝากเงิน
+        </button>
+      </div>
+    </div>
+    <div class="col col-3 box">
+      <div class="head">ถอนเงิน</div>
+      <div class="content">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="กรุณาใส่จำนวนเงิน"
+          [(ngModel)]="moneyWid"
+        />
+        <button type="button" class="btn btn-success" (click)="withDrawFunc()">
+          ถอนเงิน
+        </button>
+      </div>
+    </div>
+    <div class="col col-3 box">
+      <div class="head">เครดิต</div>
+      <div *ngFor="let item of balanceArr">
+        <p>{{ item }}</p>
+      </div>
+    </div>
+    <div class="col col-3 box">
+      <div class="head">เกมส์</div>
+      <div class="barner">
+        <img src="assets/sa_game.png" (click)="gameFunc()" />
+      </div>
+    </div>
+  </div>
+</div>
